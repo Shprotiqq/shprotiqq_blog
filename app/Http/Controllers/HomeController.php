@@ -15,9 +15,9 @@ class HomeController extends Controller
 //        dump($posts);
         $post = Post::find(1);
 //        dump($post->title);
-        foreach ($post->tags as $tag) {
+//        foreach ($post->tags as $tag) {
 //            dump($tag);
-        }
+//        }
         return view('home',compact('posts'));
     }
 
